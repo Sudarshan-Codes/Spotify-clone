@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="assets/Spotify-logo-favicon.png" type="png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+  </head>
+  <body oncontextmenu="return false">
+    <nav>
+      <img id="Spotify-logo" src="assets/Spotify-logo.png" alt="Spotify-logo" />
+      <div id="home-and-search">
+        <div id="search-bar">
+          <button id="home">
+            <img
+              id="Home-before-click-icon"
+              src="assets/Home-before-click-icon.png"
+              alt="Home-before-click-icon"
+            /></button
+          ><img
+            id="Search-icon"
+            src="assets/Search-icon.png"
+            alt="Search-icon"
+          /><input
+            id="search"
+            type="search"
+            placeholder="What do you want to play?"
+          />
+          <img
+            id="vertical-line-icon"
+            src="assets/vertical-line-icon.png"
+            alt="b=vertical-line-icon"
+          />
+          <img
+            id="Browse-icon"
+            src="assets/Browse-icon.png"
+            alt="Browse-icon"
+          />
+        </div>
+      </div>
+      <div id="text-buttons-container">
+        <div id="all-text-buttons">
+          <button class="text-button Premium"><a href="#">Premium</a></button>
+          <button class="text-button Support"><a href="#">Support</a></button>
+          <button class="text-button Download"><a href="#">Download</a></button>
+          <span id="vertical-line"
+            ><img
+              id="vertical-line-icon-1"
+              src="assets/vertical-line-icon.png"
+              alt="vertical-line-icon"
+          /></span>
+        </div>
+        <div id="install-signin-login">
+          <button class="text-button install-button">
+            <img
+              id="Download-icon"
+              src="assets/Download-icon.png"
+              alt="Download-icon"
+            /><a class="install-app" href="#">Install App</a>
+          </button>
+          <button class="text-button">
+            <a class="sign-up" href="#">Sign up</a>
+          </button>
+          <button class="text-button">
+            <a id="log-in" href="#">Log in</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="left-container">
+      <header id="left-header-text">
+        <h4 id="heading">Your Library</h4>
+        <button id="Plus-icon-button">
+          <img id="Plus-icon" src="assets/Plus-icon.png" alt="Plus-icon" />
+        </button>
+      </header>
+      <div id="section-containers">
+        <section class="section section-1">
+          <h4 id="section-heading">Create your first playlist</h4>
+          <p id="section-heading-paragraph">It's easy, we'll help you</p>
+          <button class="buttons Create-playlist-button">
+            Create playlist
+          </button>
+        </section>
+        <section class="section section-2">
+          <h4 id="section-heading">Let's find some podcasts to follow</h4>
+          <p id="section-heading-paragraph">
+            We'll keep you updated on new episodes
+          </p>
+          <button class="buttons Browse-podcast-button">Browse podcasts</button>
+        </section>
+      </div>
+
+      <footer id="left-container-footer">
+        <ul id="policies">
+          <li class="some-policies"><a href="#">Legal</a></li>
+          <li class="some-policies"><a href="#">Safety & Privacy Center</a></li>
+          <li class="some-policies"><a href="#">Privacy Policy</a></li>
+          <li class="some-policies"><a href="#">Cookies</a></li>
+          <li class="some-policies"><a href="#">About Ads</a></li>
+          <li class="some-policies"><a href="#">Accessibility</a></li>
+        </ul>
+        <p class="Cookies"><a href="#">Cookies</a></p>
+      </footer>
+
+      <div id="language-button-container">
+        <button id="language-button">
+          <img src="assets/Language-icon.png" alt="" />English
+        </button>
+      </div>
+    </div>
+
+    <div id="right-container">
+      <div id="right-container-header-boxes">
+        <header id="right-container-header">
+          <div id="trending-songs"><a href="#">Trending songs</a></div>
+          <div id="show-all"><a href="#">Show all</a></div>
+        </header>
+
+        <div class="card-sections">
+          <div
+            id="left-scrollbar-btn"
+            class="left-scrollbar-btn scroll-btn hidden"
+          >
+            <img
+              class="btn left"
+              src="assets/left-scroll-button-icon.png"
+              alt="left-scroll-btn"
+            />
+          </div>
+
+          <div class="cards-container">
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-1.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-2.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-3.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-4.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-5.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-6.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-7.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-8.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-9.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="cards-buttons">
+                <div id="images">
+                  <img
+                    class="card-images"
+                    src="card-images/song-10.jpeg"
+                    alt="song-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="song-name"></p>
+                  <a class="artist-name" href="#"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="right-scrollbar-btn"
+            class="right-scrollbar-btn scroll-btn hidden"
+          >
+            <img
+              class="btn right"
+              src="assets/right-scroll-button-icon.png"
+              alt="right-scroll-btn"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="artist-container-header-boxes">
+        <header id="artist-container-header">
+          <div id="popular-artist"><a href="#">Popular artists</a></div>
+          <div id="show-all"><a href="#">Show all</a></div>
+        </header>
+
+        <div class="card-sections">
+          <div
+            id="left-scrollbar-btn"
+            class="left-scrollbar-btn scroll-btn hidden"
+          >
+            <img
+              class="btn left"
+              src="assets/left-scroll-button-icon.png"
+              alt="left-scroll-btn"
+            />
+          </div>
+
+          <div class="cards-container">
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/arjit-singh.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">Arjit Singh</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/A-R-Rahman.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">A.R Rahman</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/anirudh-ravichander.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">Anirudh Ravichander</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/atif-aslam.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">Atif Aslam</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/honey-singh.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">Honey Singh</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/Pritam.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">Pritam</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/sachin-jigar.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">Sachin-Jigar</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/Shankar-ehsaan-roy.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">Shankar-Ehsaan-Roy</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/udit-narayan.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">Udit Narayan</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-cards">
+              <div class="artist-card-buttons">
+                <div id="images">
+                  <img
+                    class="artist-card-images"
+                    src="artist-images/vishal-shekhar.jpeg"
+                    alt="artist-1"
+                  />
+                  <button class="playbutton">
+                    <img
+                      class="play-button-icon"
+                      src="assets/play-button-icon.png"
+                      alt="play-button-icon"
+                    />
+                  </button>
+                </div>
+                <div class="names">
+                  <p class="popular-artist">Vishal Shekhar</p>
+                  <a class="artist" href="#">Artist</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="right-scrollbar-btn"
+            class="right-scrollbar-btn scroll-btn hidden"
+          >
+            <img
+              class="btn right"
+              src="assets/right-scroll-button-icon.png"
+              alt="right-scroll-btn"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="playbar-container">
+      <div id="playbar-section">
+        <div id="playbar-container-boxes">
+          <div class="playing-song">
+            <div><img class="playing-song-image" src="card-images/song-1.jpeg" /></div>
+            <div class="name-artist">
+              <span class="playing-song-name"
+                ><a href="#">Playing Song</a></span
+              >
+              <span class="playing-song-artist"
+                ><a href="#">Artist</a></span
+              >
+            </div>
+            <button id="plus-icon2">
+              <img src="assets/plus-icon2.png" alt="" />
+            </button>
+          </div>
+
+          <div id="all-playbar-controller">
+            <div id="all-playbar-controller-section"></div>
+            <div id="playbar-buttons">
+              <button class="shuffle">
+                <img class="icon" src="assets/shuffle-button-icon.png" alt="" />
+              </button>
+              <button class="previous">
+                <img
+                  class="icon"
+                  src="assets/previous-button-icon.png"
+                  alt=""
+                />
+              </button>
+              <div class="play-button">
+                <img class="play-button-icon2" src="assets/play-button-icon.png" alt="" />
+              </div>
+            
+              <button class="next">
+                <img class="icon" src="assets/next-button-icon.png" alt="" />
+              </button>
+              <button class="repeat">
+                <img class="icon" src="assets/repeat-button-icon.png" alt="" />
+              </button>
+
+              <div id="controller">
+                <div class="time-controller">
+                  <span class="time start-time">0:00</span>
+                  <div id="line">
+                    <div class="controller-line">
+                      <div class="playing-circle"></div>
+                    </div>
+                  </div>
+                  <span class="time end-time">00:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+
+        <div id="adjust">
+          <div id="adjust-buttons">
+            <button class="adjust-btns">
+              <img src="assets/playing-view.png" alt="" />
+            </button>
+            <button class="adjust-btns">
+              <img src="assets/lyrics-icon.png" alt="" />
+            </button>
+            <button class="adjust-btns">
+              <img src="assets/Queue-icon.png" alt="" />
+            </button>
+            <button class="adjust-btns">
+              <img src="assets/connected-device-icon.png" alt="" />
+            </button>
+            <div id="volume">
+              <button class="adjust-btns volume-btn">
+               <img class="sound" src="assets/sound-button-icon.png" alt="Volume Icon" />
+
+              </button>
+              <div id="volume-line-adjust">
+                <div id="volume-line"><div class="volume-circle"></div></div>
+              </div>
+            </div>
+            <button class="adjust-btns">
+              <img src="assets/miniplayer-icon.png" alt="" />
+            </button>
+            <button class="adjust-btns">
+              <img src="assets/fullscreen-icon.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+    <script src="script.js"></script>
+  </body>
+</html>

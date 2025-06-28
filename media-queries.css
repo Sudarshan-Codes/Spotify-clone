@@ -1,0 +1,279 @@
+/* Large desktops */
+@media screen and (max-width: 1440px) {
+  #search-bar {
+    right: 380px;
+  }
+  #right-container {
+    width: 999px;
+  }
+  #cards-container {
+    width: 1440px;
+  }
+
+  #cards-sections {
+    width: 940px;
+  }
+  #right-container-header,
+  #artist-container-header {
+    gap: 690px;
+  }
+  #section-containers {
+    height: auto;
+  }
+  #playbar-container-boxes {
+    gap: 335px;
+  }
+    #volume-line-adjust{
+    margin-right: 10px;
+  }
+}
+/* Desktop 1366px */
+@media screen and (max-width: 1366px) {
+  #search-bar {
+    right: 415px;
+  }
+
+  #text-buttons-container {
+    right: 0px;
+  }
+  #right-container {
+    width: 925px;
+  }
+  #cards-container {
+    width: 1366px;
+  }
+
+  .card-sections {
+    width: 867px;
+  }
+  #right-container-header,
+  #artist-container-header {
+    gap: 620px;
+  }
+  #section-containers {
+    height: auto;
+  }
+  #playbar-container-boxes {
+    gap: 300px;
+  }
+  .controller-line {
+    width: 526px;
+  }
+    #volume-line-adjust{
+    margin-right: 10px;
+  }
+}
+/* Standard desktops */
+@media screen and (max-width: 1280px) {
+  #search-bar {
+    right: 390px;
+  }
+  #text-buttons-container {
+    right: 0px;
+  }
+  .text-button {
+    font-size: 14px;
+  }
+  .install-button {
+    padding: 5px;
+    margin-left: 20px;
+  }
+  .install-app {
+    margin-right: -8px;
+    padding: 0;
+  }
+  .sign-up {
+    padding: 0;
+  }
+
+  #all-text-buttons {
+    gap: 5px;
+  }
+  #text-buttons-container {
+    right: 0px;
+  }
+  #right-container {
+    width: 840px;
+  }
+  .cards-container {
+    width: 1280px;
+  }
+
+  .card-sections {
+    width: 780px;
+  }
+  #right-container-header,
+  #artist-container-header {
+    gap: 540px;
+  }
+  #section-containers {
+    height: auto;
+  }
+  #playbar-container-boxes {
+    gap: 260px;
+  }
+  .controller-line {
+    width: 500px;
+  }
+    #volume-line-adjust{
+    margin-right: 10px;
+  }
+}
+
+/* Laptops */
+@media screen and (max-width: 1024px) {
+  #search {
+    width: 300px;
+  }
+  #search-bar {
+    right: 474px;
+  }
+  #text-buttons-container {
+    right: 0px;
+  }
+
+  .text-button {
+    font-size: 15px;
+  }
+  .install-button {
+    margin-left: 14px;
+  }
+  .install-app {
+    margin-right: 0px;
+    padding: 0;
+  }
+  .sign-up {
+    padding: 0;
+  }
+  #all-text-buttons {
+    gap: 5px;
+  }
+
+  #right-container {
+    width: 663px;
+    left: 354px;
+  }
+  .cards-container {
+    width: 1024px;
+  }
+
+  .card-sections {
+    width: 605px;
+  }
+  #right-container-header,
+  #artist-container-header {
+    gap: 320px;
+  }
+
+  #left-container {
+    width: 340px;
+  }
+  .section {
+    width: 320px;
+  }
+  #section-containers {
+    height: auto;
+  }
+   #playbar-container-boxes {
+    gap: 140px;
+  }
+  .controller-line {
+    width: 350px;
+  }
+  .adjust-btns {
+  height: 28px;
+  width: 28px; 
+}
+  #volume-line-adjust{
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 960px) {
+  #search {
+    width: 250px;
+  }
+  #search-bar {
+    right: 500px;
+  }
+  #text-buttons-container {
+    right: 0px;
+  }
+
+  .text-button {
+    font-size: 14px;
+  }
+  .install-button {
+    margin-left: 11px;
+  }
+
+  .install-app {
+    margin-right: 0px;
+    padding: 0;
+  }
+
+  .sign-up {
+    padding: 0;
+  }
+  #all-text-buttons {
+    gap: 1px;
+  }
+
+  .Download {
+    margin-left: 5px;
+  }
+  #right-container {
+    width: 620px;
+    left: 334px;
+  }
+  .cards-container {
+    width: 960px;
+  }
+
+  .card-sections {
+    width: 550px;
+  }
+  #right-container-header,
+  #artist-container-header {
+    gap: 310px;
+  }
+
+  #left-container {
+    width: 320px;
+  }
+  .section {
+    width: 300px;
+    height: auto;
+  }
+  #section-containers {
+    height: auto;
+  }
+  #policies {
+    width: auto;
+  }
+  #left-container-footer {
+    width: auto;
+  }
+     #playbar-container-boxes {
+    gap: 120px;
+  }
+  
+  #volume-line-adjust{
+    margin-right: 10px;
+  }
+
+  .controller-line {
+    width: 350px;
+  }
+  .adjust-btns {
+  height: 24px;
+  width: 24px; 
+}
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+}
